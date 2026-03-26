@@ -6,7 +6,7 @@
     "containerDefinitions": [
         {
             "name": "project1",
-            "image": "<IMAGE1_NAME>",
+            "image": "383465661937.dkr.ecr.ap-south-1.amazonaws.com/car-catalogue:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,9 +16,6 @@
                 }
             ],
             "essential": true,
-            "environment": [],
-            "mountPoints": [],
-            "volumesFrom": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -33,11 +30,5 @@
         "FARGATE"
     ],
     "cpu": "1024",
-    "memory": "3072",
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
-    },
-    "volumes": [],
-    "placementConstraints": []
+    "memory": "3072"
 }
