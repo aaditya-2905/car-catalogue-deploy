@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing...
+
+  build:
+    commands:
+      - echo Build started
+      - echo Replacing image URI in taskdef.json
+      - sed -i "s|<IMAGE1_NAME>|$IMAGE_URI|g" taskdef.json
+
+artifacts:
+  files:
+    - appspec.yaml
+    - taskdef.json
