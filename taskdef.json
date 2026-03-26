@@ -6,7 +6,7 @@
     "containerDefinitions": [
         {
             "name": "project1",
-            "image": "383465661937.dkr.ecr.ap-south-1.amazonaws.com/car-catalogue:latest",
+            "image": "<IMAGE1_NAME>",
             "cpu": 0,
             "portMappings": [
                 {
